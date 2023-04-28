@@ -1,0 +1,52 @@
+// declare add function
+fn add(x: int, y: int) int{
+  return x + y;
+}
+
+// declear test function
+fn test(){
+  var x = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  
+  for(i in x){
+    if((i % 2) == 0){
+      if(i <= 5){
+        print("i = {}", i);
+      }
+    }else{
+      if(i >= 5){
+        print("b = {}", i);
+      }
+    }
+  }
+  print("hello");
+}
+
+fn main(){
+  // x is an integer with a value of 123
+  var x: int = 123;
+  // y is a float point with a value of 3.14
+  var y: float = 3.14;
+  // z is a boolean with a value of true
+  var z: bool = true;
+  // str is a string with a value of 'hello world!'
+  var str: string = "hello world!";
+
+  // arr is an array with 5 integer elements
+  var arr = [5]int{1, 2, 3, 4, 5};
+
+  // arithmetic operations
+  var a = (x + 256) * 2;
+  var b = (y - 1.0) / 2;
+  var c = a % 2;
+
+  // logical operations
+  var la = 1 && 8;
+  var lb = 4 || 2;
+  var lc = ~z;
+
+  // while loop
+  var i = 0;
+  while(i < 10){
+    i = i + 1;
+  }
+}
